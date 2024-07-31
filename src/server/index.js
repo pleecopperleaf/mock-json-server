@@ -29,7 +29,7 @@ function logger(req, res, next) {
 
 const start = async (source, port) => {
   app = express();
-  app.use(cors({origin:true,credentials: true})));
+  app.use(cors({origin:true,credentials: true}));
   app.use(logger);
   app.locals = {
     _: _
